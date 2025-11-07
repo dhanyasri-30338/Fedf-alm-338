@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Operations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>MATRIX OPERATIONS</h2>
+
+        <div class="matrix-inputs">
+            <div>
+                <h3>Matrix A</h3>
+                <input type="number" id="rowsA" placeholder="Rows">
+                <input type="number" id="colsA" placeholder="Columns">
+                <button onclick="generateMatrix('A')">Generate A</button>
+                <div id="matrixA"></div>
+            </div>
+
+            <div>
+                <h3>Matrix B</h3>
+                <input type="number" id="rowsB" placeholder="Rows">
+                <input type="number" id="colsB" placeholder="Columns">
+                <button onclick="generateMatrix('B')">Generate B</button>
+                <div id="matrixB"></div>
+            </div>
+        </div>
+
+        <div class="btn-row">
+            <button onclick="addMatrices()">A + B</button>
+            <button onclick="subtractMatrices()">A - B</button>
+            <button onclick="multiplyMatrices()">A × B</button>
+            <button class="clr" onclick="clearAll()">Clear</button>
+        </div>
+
+        <h3>Result</h3>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
